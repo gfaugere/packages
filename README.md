@@ -16,3 +16,10 @@ echo 'deb https://gfaugere.gitlab.io/packages/debian/ ./' | sudo tee -a /etc/apt
 sudo apt update
 sudo apt install <package>
 ```
+
+### rpm-based
+
+```bash
+sudo dnf config-manager --add-repo https://gfaugere.gitlab.io/packages/rpm/gfaugere-packages.repo
+sudo dnf install <package>
+```
